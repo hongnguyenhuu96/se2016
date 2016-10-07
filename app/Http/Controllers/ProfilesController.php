@@ -55,9 +55,10 @@ class ProfilesController extends Controller
         return redirect('home');
     }
 
-    public function getDistrict(){
-        // $city_id = Input::get('city_id');
-        // $districts = City::findOrFail($city_id);
+    public function getDistrict(Request $request){
+        $city_id = $request->input('city_id');
+        $districts = City::findOrFail($city_id)->districts;
+        echo($districts->toJson());
     }
 
     public function addSampleData(){

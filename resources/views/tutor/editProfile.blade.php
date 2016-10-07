@@ -196,14 +196,31 @@
         });
 
         function getDistrict(val){
+            function template(id, name) {
+                var text = "<option value=" + id + ">" + name + "</option>";
+                return text;
+            }
             $.ajax({
-            	type: "post",
+            	//
+                type: "post",
             	url: "/getDistrict",
-            	data: {'city_id':val, '_token': $('input[name=_token]').val()},
+                dataType: "json",
+            	data: {
+                    'city_id':val,
+                    '_token': $('input[name=_token]').val()
+                },
             	success: function(data){
-            		// $("#districts").html(data);
-                    alert(data);
-            	}
+                    var text = '';
+                    data.forEach(function(val) {
+                        text += template(val.id, val.name);
+                    });
+            		$("#districts").html(text);
+                    console.log(data);
+
+            	},
+                error: function(xhr, status, error) {
+                    console.log(status, error);
+                }
             });
         }
 
