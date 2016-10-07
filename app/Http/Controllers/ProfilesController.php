@@ -47,6 +47,7 @@ class ProfilesController extends Controller
         $profile->update($request->all());
         // dd($profile);
         $profile->subjects()->sync((array)$request->input('subjects'));
+        $profile->districts()->sync((array)$request->input('districts'));
         return view('tutor.editProfile', ['profile' => $profile, 'subjects' => Subject::all(), 'cities'=> City::all()]);
     }
 

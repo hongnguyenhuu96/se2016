@@ -162,15 +162,14 @@
                 <label class="control-label col-sm-3" for="districts" >Quận/Huyện</label>
                 <div class="col-sm-9">
                     <select class="js-example-basic-multiple js-states form-control" id="districts" name="districts[]" multiple="multiple">
-                          {{-- @foreach($subjects as $subject)
-                              <option value={{$subject->id}}@foreach($profile->subjects as $s) @if($subject->id == $s->id) selected="selected" @endif @endforeach>{{$subject->name}}</option>
-                          @endforeach --}}
+                            @if($profile->city)
+                                @foreach($profile->city->districts as $district)
+                                    <option value={{$district->id}}@foreach($profile->districts as $s) @if($district->id == $s->id) selected="selected" @endif @endforeach>{{$district->name}}</option>
+                                @endforeach
+                            @endif
                     </select>
                 </div>
             </div>
-
-
-
 
         </div>
 
@@ -211,11 +210,13 @@
                 },
             	success: function(data){
                     var text = '';
+                    var a = '{{$profile->districts}}';
                     data.forEach(function(val) {
                         text += template(val.id, val.name);
                     });
             		$("#districts").html(text);
                     console.log(data);
+                    console.log("a = " + a);
 
             	},
                 error: function(xhr, status, error) {
