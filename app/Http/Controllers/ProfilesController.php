@@ -22,7 +22,7 @@ class ProfilesController extends Controller
     public function viewAllComponents(){
         return view('SourceComponents', [
             'subjects' => App\Subject::all(),
-            'spareTimes' => App\Time::all(),
+            'times' => App\Time::all(),
             'districts' => App\District::all(),
             'cities' => App\City::all(),
         ]);
@@ -48,6 +48,7 @@ class ProfilesController extends Controller
         // dd($profile);
         $profile->subjects()->sync((array)$request->input('subjects'));
         $profile->districts()->sync((array)$request->input('districts'));
+        $profile->times()->sync((array)$request->input('times'));
         return view('tutor.editProfile', ['profile' => $profile, 'subjects' => Subject::all(), 'cities'=> City::all()]);
     }
 
@@ -95,6 +96,34 @@ class ProfilesController extends Controller
         App\District::create(['name'=>'Phú Lương', 'city_id'=>'4']);
         App\District::create(['name'=>'Đồng Hỷ', 'city_id'=>'4']);
         App\District::create(['name'=>'Định Hóa', 'city_id'=>'4']);
+
+        App\Time::create(['day'=>'2','session'=>'1']);
+        App\Time::create(['day'=>'2','session'=>'2']);
+        App\Time::create(['day'=>'2','session'=>'3']);
+
+        App\Time::create(['day'=>'3','session'=>'1']);
+        App\Time::create(['day'=>'3','session'=>'2']);
+        App\Time::create(['day'=>'3','session'=>'3']);
+
+        App\Time::create(['day'=>'4','session'=>'1']);
+        App\Time::create(['day'=>'4','session'=>'2']);
+        App\Time::create(['day'=>'4','session'=>'3']);
+
+        App\Time::create(['day'=>'5','session'=>'1']);
+        App\Time::create(['day'=>'5','session'=>'2']);
+        App\Time::create(['day'=>'5','session'=>'3']);
+
+        App\Time::create(['day'=>'6','session'=>'1']);
+        App\Time::create(['day'=>'6','session'=>'2']);
+        App\Time::create(['day'=>'6','session'=>'3']);
+
+        App\Time::create(['day'=>'7','session'=>'1']);
+        App\Time::create(['day'=>'7','session'=>'2']);
+        App\Time::create(['day'=>'7','session'=>'3']);
+
+        App\Time::create(['day'=>'8','session'=>'1']);
+        App\Time::create(['day'=>'8','session'=>'2']);
+        App\Time::create(['day'=>'8','session'=>'3']);
 
         return redirect('/components');
     }
