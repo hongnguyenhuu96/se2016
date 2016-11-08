@@ -81,9 +81,15 @@
                                         View Profile {{Auth::user()->id}}
                                     </a>
 
-                                    <form id="profile" action="{{ url('/profile') }}" method="GET" style="display: none;">
+                                    {{-- <form id="profile" action="{{ url('/profile') }}" method="GET" style="display: none;">
                                         {{ csrf_field() }}
-                                    </form>
+                                    </form> --}}
+                                </li>
+
+                                <li>
+                                    <a href="{{ url('/about') }}">
+                                        About team
+                                    </a>
                                 </li>
 
                             </ul>

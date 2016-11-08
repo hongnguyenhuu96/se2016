@@ -29,6 +29,10 @@ Route::get('/delete/{user}', 'ProfilesController@destroy');
 
 Route::get('/makeData', 'ProfilesController@addSampleData');
 
+Route::get('/about', function(){
+    return view('pages.about');
+});
+
 // Route::get('/test', function(){
 //     return view('test');
 // });

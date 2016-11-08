@@ -130,9 +130,11 @@
                 $(this).css({"background-color": "#2c3e50", "color": "#ffffff"});
             });
         });
-        @foreach($profile->times as $time)
-            var idtime = "#time" + {{$time->id}};
-            $(idtime).attr("checked", true);
-        @endforeach
+        @if($user->profile)
+            @foreach($profile->times as $time)
+                var idtime = "#time" + {{$time->id}};
+                $(idtime).attr("checked", true);
+            @endforeach
+        @endif
     </script>
 @stop
