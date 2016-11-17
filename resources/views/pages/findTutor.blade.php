@@ -15,12 +15,10 @@
 
 
 @section('content')
-    <div class="container-fluid">
-        <div class="col-sm-offset-1 col-sm-12">
-            <form class="form-horizontal">
-                {{ csrf_field() }}
-
-                <div class="form-group col-sm-2">
+        <form class="form-horizontal">
+            {{ csrf_field() }}
+            <div class="col-sm-offset-1 col-sm-11">
+                <div class="form-group col-sm-11">
                     <select class="js-example-basic-multiple js-states form-control" id="subjects" name="subjects[]" multiple="multiple">
                          @foreach($subjects as $subject)
                               <option value={{$subject->id}}>{{$subject->name}}</option>
@@ -37,7 +35,7 @@
                     </select>
                 </div>
 
-                <div class="form-group col-sm-3">
+                <div class="form-group col-sm-6">
                     <select class="js-example-basic-multiple js-states form-control" id="districts" name="districts[]" multiple="multiple"></select>
                 </div>
 
@@ -60,13 +58,12 @@
                 <div class="form-group col-sm-1">
                     <button type="button" name="button" id="submitBtn" class="btn btn-primary" onclick="getTutor(1)"><span class="glyphicon glyphicon-search"></span></button>
                 </div>
-            </form>
-        </div>
-
+            </div>
+            
+        </form>
         <div class="col-sm-12" id="result">
 
         </div>
-    </div>
 @stop
 
 

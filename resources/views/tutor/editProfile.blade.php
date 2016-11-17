@@ -60,10 +60,10 @@
                 <label class="control-label col-sm-3" for="gender">Giới tính</label>
                 <div>
                     <label class="radio-inline">
-                      <input type="radio" name="gender" value="nam" {{($profile->gender=='nam') ? 'checked':''}} >Nam
+                      <input type="radio" name="gender" value="Nam" {{($profile->gender=='nam') ? 'checked':''}} >Nam
                     </label>
                     <label class="radio-inline">
-                      <input type="radio" name="gender" value="nu" {{($profile->gender=='nữ') ? 'checked':''}}>Nữ
+                      <input type="radio" name="gender" value="Nữ" {{($profile->gender=='nữ') ? 'checked':''}}>Nữ
                     </label>
                     <label class="radio-inline">
                       <input type="radio" name="gender" value="other" {{($profile->gender=='other') ? 'checked':''}}>Other

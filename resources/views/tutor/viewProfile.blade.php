@@ -118,7 +118,6 @@
               </div>
         </div>
     @endif
-
 @stop
 
 @section('footer')

@@ -34,7 +34,9 @@
                                 <h4 class="subheading">Nguyễn Hữu Hồng</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Sinh viên Khoa CNTT, trường ĐH Công nghệ, ĐHQGHN. Sở thích: Lập trình. Sở trường: Chơi game</p>
+                                <p class="text-muted">Sinh viên Khoa CNTT, ĐH Công nghệ-ĐHQGHN</p>
+                                <p class="text-muted">Sở thích: Lập trình</p>
+                                <p class="text-muted">Sở trường: Chơi game</p>
                             </div>
                         </div>
                     </li>
@@ -49,7 +51,9 @@
                                 <h4 class="subheading">Trần Trịnh Bình Thành</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Sinh viên Khoa CNTT, trường ĐH Công nghệ, ĐHQGHN. Sở thích: lập trình. Sở trường: Tán gái</p>
+                                <p class="text-muted">Sinh viên Khoa CNTT, ĐH Công nghệ-ĐHQGHN</p>
+                                <p class="text-muted">Sở thích: Lập trình</p>
+                                <p class="text-muted">Sở trường: Chơi game</p>
                             </div>
                         </div>
                     </li>
@@ -65,7 +69,9 @@
                                 <h4 class="subheading">Trần Như Thuật</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Sinh viên Khoa CNTT, trường ĐH Công nghệ, ĐHQGHN. Sở thích: Bóng đá. Sở trường: Đá bóng</p>
+                                <p class="text-muted">Sinh viên Khoa CNTT, ĐH Công nghệ-ĐHQGHN</p>
+                                <p class="text-muted">Sở thích: Lập trình</p>
+                                <p class="text-muted">Sở trường: Chơi game</p>
                             </div>
                         </div>
                     </li>
@@ -81,7 +87,9 @@
                                 <h4 class="subheading">Trần Văn Liên</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Sinh viên Khoa CNTT, trường ĐH Công nghệ, ĐHQGHN. Sở thích: Chém gió. Sở trường: Lập trình</p>
+                                <p class="text-muted">Sinh viên Khoa CNTT, ĐH Công nghệ-ĐHQGHN</p>
+                                <p class="text-muted">Sở thích: Lập trình</p>
+                                <p class="text-muted">Sở trường: Chơi game</p>
                             </div>
                         </div>
                     </li>
