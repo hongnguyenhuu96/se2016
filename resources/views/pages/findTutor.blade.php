@@ -18,12 +18,13 @@
           -moz-background-size: cover;
           background-size: cover;
           -o-background-size: cover;
-          text-align: center;
-          color: white;
         }
         #filter{
             padding-top: 75px;
             padding-bottom: 1200px;
+        }
+        .noti{
+            color: white;
         }
     </style>
 @stop
