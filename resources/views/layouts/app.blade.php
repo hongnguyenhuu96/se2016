@@ -105,7 +105,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="{{ url('#') }}">
+                                    <a href="#">
                                         Hướng dấn sử dụng
                                     </a>
                                 </li>
