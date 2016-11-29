@@ -1,14 +1,7 @@
 @extends('layouts.app')
 @section('header')
-    <title>About</title>
-    {{-- <link href="/css/bootstrap.min.css" rel="stylesheet"> --}}
-
-    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://blackrockdigital.github.io/startbootstrap-agency/css/agency.min.css" rel="stylesheet">
+    <title>About | Tutor Online</title>
+    <link href="/css/about.css" rel="stylesheet">
 @stop
 
 @section('content')
@@ -37,6 +30,7 @@
                                 <p class="text-muted">Sinh viên Khoa CNTT, ĐH Công nghệ-ĐHQGHN</p>
                                 <p class="text-muted">Sở thích: Lập trình</p>
                                 <p class="text-muted">Sở trường: Chơi game</p>
+                                <p class="text-muted">Email: hongnguyenhuu96@gmail.com</p>
                             </div>
                         </div>
                     </li>

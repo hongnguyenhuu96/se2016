@@ -37,7 +37,7 @@ class ProfilesController extends Controller
             if(!$user->profile){
                 $user->profile = Profile::create(['user_id'=>$user->id]);
             }
-            return view('tutor.editProfile', ['profile'=>$user->profile, 'subjects' => Subject::all(), 'cities' => City::all()]);
+            return view('tutor.editProfile', ['profile' => $user->profile, 'subjects' => Subject::all(), 'cities' => City::all()]);
         }
         else redirect('home');
     }
@@ -73,6 +73,7 @@ class ProfilesController extends Controller
 
     public function addSampleData(){
         //create Subject
+        if(App\Subject::all() || App\District::all() || App\Time::all()) return redirect('home');
         App\Subject::create(['name'=>'Toán lớp 1']);
         App\Subject::create(['name'=>'Toán lớp 2']);
         App\Subject::create(['name'=>'Toán lớp 3']);
@@ -93,7 +94,7 @@ class ProfilesController extends Controller
         App\Subject::create(['name'=>'Lí lớp 10']);
         App\Subject::create(['name'=>'Lí lớp 11']);
         App\Subject::create(['name'=>'Lí lớp 12']);
- 
+
         App\Subject::create(['name'=>'Hóa lớp 8']);
         App\Subject::create(['name'=>'Hóa lớp 9']);
         App\Subject::create(['name'=>'Hóa lớp 10']);
